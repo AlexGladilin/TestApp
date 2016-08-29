@@ -9,6 +9,7 @@ namespace TestApp
         {
             return SortRoutes(routes, routes[0]);
         }
+
         private static IList<Route> SortRoutes(List<Route> routes, Route startRoute)
         {
             var currentRoute = routes.Where(p => p.StartPoint.ToUpperInvariant() == startRoute.EndPoint.ToUpperInvariant())
